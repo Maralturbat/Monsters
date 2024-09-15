@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --box-shadow: 0px 15px 30px 0px rgba(63, 42, 146, 0.08);
+    --white: rgba(255, 255, 255, 0.8);
+    --font-family: "Work Sans";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    border-radius: 28px;
+    border: 2px solid var(--white);
+    box-shadow: var(--box-shadow);
+    background-image: url(./images/monsters.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#board div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 170px;
+    width: 170px;
+    background-image: url(./images/door.png);
+    background-size: cover;
+}
+
+#board div img {
+    width: 120px;
+    height: 150px;
+    pointer-events: none;
+}
